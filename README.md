@@ -6,14 +6,12 @@ Goal: Trigger and observe an account lockout after repeated failed login attempt
 
 Steps:
 
-Create a GPO to set lockout policy (3 failed attempts, 5 min duration).
+- Create a GPO to set lockout policy (3 failed attempts, 5 min duration).
 
-Use the CLIENT1 machine to attempt incorrect logins for a user.
+- Use one of the users to login
 
-View logs on DC1 using Event Viewer.
+- Use the CLIENT1 machine to attempt incorrect logins for a user.
 
-Event ID 4625 → failed logon
+- Enter Wrong password and until you are locked out. And see the message...
 
-Event ID 4740 → account locked out
-
-(Optional) Export .evtx log file.
+- View logs on DC1 using Event Viewer.
