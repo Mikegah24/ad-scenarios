@@ -1,4 +1,4 @@
-# ad-scenarios
+# Scenarios
 
 ### Scenario 1: Account Lockout After Failed Logins
 
